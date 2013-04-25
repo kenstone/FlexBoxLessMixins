@@ -1,0 +1,45 @@
+﻿/* These are the conditional mixins for the different syntax for IE10 Flexbox*/
+/* These are the styles for the sheet. You don't need
+these. You need the stuff above. Though these show how to call what's above. */
+section {
+  background-color: #CCCCCC;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -ms-flex-direction: row;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  height: 200px;
+}
+section div {
+  width: 100px;
+  min-height: 100px;
+  background-color: #555555;
+  color: white;
+}
+section div#one {
+  -ms-flex-item-align: stretch;
+  -webkit-align-self: stretch;
+  align-self: stretch;
+}
+section div#two {
+  -ms-flex-order: 2;
+  -webkit-order: 2;
+  order: 2;
+  -ms-flex-item-align: start;
+  -webkit-align-self: flex-start;
+  align-self: flex-start;
+}
+section div#three {
+  -ms-flex-order: 3;
+  -webkit-order: 3;
+  order: 3;
+}
